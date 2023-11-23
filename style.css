@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-fondo: #026842;
+  --colo-botones-primarios: #013e28;
+  --color-fondo-calculadora: #00150d;
+  --color-text: #ffffff;
+  --color-botones: #012a1a;
+  --color-botones-hover: #013e28;
+}
+
+header {
+  background-color: var(--color-fondo);
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  max-height: 60px; /* Agrega una altura fija */
+  padding: 20px;
+  background-color: #02684388;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1.11rem;
+}
+
+.menu li a:hover {
+  color: black;
+}
+
+.contenedor__header_contenido {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 40px auto;
+  padding: 10px;
+  gap: 20px;
+}
+
+.contenido__header-izquierda {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.contenido__header-izquierda h1 {
+  color: #009d71;
+  font-weight: 300;
+}
+
+.btn__header {
+  background-color: #8d4925;
+  padding: 15px;
+  width: 30%;
+  border: none;
+  margin-top: 20px;
+}
+
+.btn__header:hover {
+  background-color: #c57d56;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.contenido__header-derecha img {
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.informacion__aleatoria {
+  width: 80%;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor__articulos {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.articulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.articulo figure img {
+  max-width: 200px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.contenedor__cita {
+  background-color: #c57d56;
+  height: 70vh;
+}
