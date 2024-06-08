@@ -1,17 +1,24 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
 
+/* General styles */
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
+/* HTML and body styles */
 html {
 	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
 }
 
+body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Variables */
 :root {
 	--color-fondo: #026842;
 	--colo-botones-primarios: #013e28;
@@ -21,16 +28,17 @@ html {
 	--color-botones-hover: #013e28;
 }
 
+/* Header styles */
 header {
 	width: 100%;
 	height: 100vh;
 	padding: 20px;
 	background-size: cover;
 	background-attachment: fixed;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	background-color: cornflowerblue;
 }
 
 .navbar {
@@ -64,6 +72,10 @@ header {
 
 .menu li a:hover {
 	color: black;
+	background-color: #0000ff;
+	color: #ffdd57;
+	border-radius: 5px;
+	padding: 10px;
 }
 
 .contenedor__header_contenido {
@@ -119,7 +131,6 @@ header {
 	min-height: 60vh;
 	margin: 0 auto;
 	padding: 10px;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -175,6 +186,10 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #0e0e0e;
+	color: white;
+	padding: 30px;
+	text-align: center;
 }
 
 .contenerdor__footer_contenido {
@@ -182,7 +197,6 @@ footer {
 	color: white;
 	border-radius: 20px;
 	padding: 30px;
-
 	display: flex;
 	gap: 20px;
 	align-items: center;
@@ -202,161 +216,4 @@ footer {
 	border: none;
 	background-color: #009d71;
 	cursor: pointer;
-=======
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  background-color: cornflowerblue;
-  height: 100vh;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  margin: 0 auto;
-}
-
-#logo {
-  text-decoration: none;
-  color: black;
-  font-size: 23px;
-}
-
-#logo::first-letter {
-  color: blueviolet;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-#link-java:hover {
-  background-color: #784320;
-  color: white;
-}
-
-#link-python:hover {
-  background-color: #0000ff;
-  color: #ffdd57;
-}
-
-#link-javascript:hover {
-  background-color: #f7de1e;
-  color: #000000;
-}
-
-.contenedor__contenido_header {
-  width: 90%;
-  display: flex;
-  margin: 40px;
-  padding: 10px;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.contenido__izquierda {
-  width: 50%;
-}
-.contenido__izquierda h1 {
-  margin-bottom: 10px;
-}
-.btn-header {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  margin: 20px 30px;
-  width: 20%;
-}
-.contenido__derecha img {
-  height: 400px;
-  width: 400px;
-  border-radius: 20px;
-  object-fit: contain;
-}
-
-section {
-  width: 80%;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-section h2 {
-  text-align: center;
-  margin-top: 30px;
-}
-.contenedor__lenguajes {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  height: 80%;
-  align-items: center;
-  text-align: center;
-}
-.lenguaje {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-}
-
-.lenguaje figure img {
-  width: 150px;
-  height: 150px;
-}
-
-aside {
-  width: 100%;
-  background-color: #e4e6eb;
-  padding: 50px;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-aside em {
-  font-size: 27px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.autor {
-  position: absolute;
-  right: 20px;
-  bottom: 40px;
-  font-size: 20px;
-  font: bold;
-}
-
-footer {
-  background-color: #0e0e0e;
-  color: white;
-  padding: 30px;
-  margin-top: 20px;
-  text-align: center;
->>>>>>> b13ad9fee8624669e7bb477abf76c54c96670b27
 }
