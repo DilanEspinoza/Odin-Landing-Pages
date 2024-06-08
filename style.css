@@ -38,7 +38,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: cornflowerblue;
 }
 
 .navbar {
@@ -186,7 +185,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #0e0e0e;
 	color: white;
 	padding: 30px;
 	text-align: center;
